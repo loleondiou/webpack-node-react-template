@@ -1,0 +1,51 @@
+{
+  "name": "webpack-node-react-template",
+  "version": "1.0.0",
+  "description": "An application created with webpack using node and react for back and front end tech.",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --environment=development",
+    "build-prod": "webpack --environment=production",
+    "dev": "nodemon ./src/back/Server.js localhost 3000",
+    "prod": "node ./src/back/Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loleondiou/webpack-node-react-template.git"
+  },
+  "keywords": [
+    "webpack",
+    "expressjs",
+    "react",
+    "template"
+  ],
+  "author": "SiO2Al2O3ZeroKCodah",
+  "license": "ISC",
+  "homepage": "https://github.com/loleondiou/webpack-node-react-template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.10",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "history": "^4.7.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1"
+  }
+}
